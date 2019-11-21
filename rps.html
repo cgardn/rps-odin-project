@@ -7,7 +7,6 @@
     }
 
     function playRound(playerSelection, computerSelection) {
-        //playerSelection = playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
         let result;
         let message;
 
@@ -59,7 +58,6 @@
 
     function game() {
         for (let i=0; i<5; i++) {
-            //let playerChoice = prompt("Make your play: rock, paper, or scissors!");
             console.log(playRound(getPlayerChoice(), computerPlay()));
         }
         console.log("Game over?");
