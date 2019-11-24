@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="rps.css">
+    <body>
+
+        <div id="container">
+            <div id="buttonContainer">
+                    <button class="buttons" data-choice="rock">Rock</button>
+                    <button class="buttons" data-choice="paper">Paper</button>
+                    <button class="buttons" data-choice="scissors">Scissors</button>
+            </div>
+
+            <div id="display">Click an option to play!</div>
+            <div id="playerScoreHeader">
+                <h1>You:</h1>
+                <h1 id = "playerScore">0</h1>
+            </div>
+            <div id="computerScoreHeader">
+                <h1>Computer:</h1>
+                <h1 id = "computerScore">0</h1>
+            </div>
+            <div id="resetContainer">
+                <button class="buttons" id="reset">Reset</button>
+            </div>
+            <div id="winMessageContainer" class="hidden">
+                <p id="winMessage"></p>
+            </div>
+        </div>
+
+
+
+    </body>
+
+
+<script type="text/javascript" src="rps.js"></script>
+</html>

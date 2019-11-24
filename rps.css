@@ -1,0 +1,76 @@
+body {
+    margin: auto;
+    height: 100%;
+}
+
+div h1 {
+    text-align:center;
+}
+
+#container {
+    display:grid;
+    grid-template-columns: 1fr 50% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "pScore buttons cScore"
+        ". display ."
+        ". reset ."
+        ". winMessage ."
+}
+
+#display {
+    border: 1px solid rgb(32, 32, 32);
+    padding: 10px;
+    grid-area: display;
+}
+
+#winMessageContainer {
+    border: 3px dotted rgb(165, 93, 165);
+    grid-area: winMessage;
+    margin: auto;
+}
+
+#winMessage {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 5em;
+    color: darkblue;
+}
+
+#buttonContainer {
+    display:inline-block;
+    align-self: center;
+    justify-self: center;
+    margin: 200px auto 50px auto;
+    text-align: center;
+    grid-area: buttons;
+}
+
+#playerScoreHeader {
+    grid-area: pScore;
+    margin: auto;
+    text-align: center;
+}
+
+#computerScoreHeader {
+    grid-area: cScore;
+    margin: auto;
+    text-align: center;
+}
+
+#resetContainer {
+    grid-area: reset;
+    justify-self:center;
+    margin-top: 50px;;
+}
+
+.buttons {
+    background-color: rgb(150, 150, 150);
+    margin: 5px;
+    width: 75px;
+    height: 35px;
+}
+
+.hidden {
+    display: none;
+}
